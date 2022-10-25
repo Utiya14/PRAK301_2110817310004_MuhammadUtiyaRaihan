@@ -1,0 +1,31 @@
+package praktikum3.soal2;
+import java.util.Scanner;
+import java.util.LinkedList;
+        
+public class Main {
+    public static void main(String[] args) {
+        String nama = "";
+        String jenis="";
+        String namaPemimpin="";
+        int tanggal=0;
+        int bulan=0; 
+        int tahun=0;
+        Scanner input = new Scanner(System.in);
+        Negara negara = new Negara(nama, jenis, namaPemimpin, tanggal, bulan, tahun);
+        LinkedList<Negara> Negara1 = new LinkedList<>();
+
+        int ulang;
+        ulang = input.nextInt();
+
+        for (int i=0; i<ulang; i++){
+            Negara sample = new Negara(nama, jenis, namaPemimpin, tanggal, bulan, tahun);
+            sample.getData();
+            Negara1.add(sample);
+        }
+
+        for (int i = 0; i < Negara1.size(); i++){
+            Negara nIndex = Negara1.get(i);
+            nIndex.tampilkan();
+    }
+    }
+}
