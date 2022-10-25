@@ -8,10 +8,10 @@ public class Main {
           
         Scanner input = new Scanner(System.in);
         
-        // Instansiasi / Membuat Object
+        // instansiasi objek
         Dadu dadu = new Dadu();
         
-        // User input banyaknya jumlah dadu (e)
+        // inputan user untuk banyaknya dadu
         int inputUser = input.nextInt();
         
         dadu.setInput(inputUser);
