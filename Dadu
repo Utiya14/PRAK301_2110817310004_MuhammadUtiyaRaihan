@@ -11,7 +11,7 @@ public class Dadu {
     }
     
     // Instansiasi Obj LinkedList
-    LinkedList<Integer> ObjDadu = new LinkedList<>();
+    LinkedList<Integer> ObjDadu = new LinkedList<Integer>();
     
     // Membuat method acakNilai() (b)
     void acakNilai() {
