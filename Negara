@@ -7,7 +7,7 @@ public class Negara{
     private String nama, jenis, namaPemimpin;
     private int tanggal, bulan, tahun;
 
-//    Konstruktor
+    //konstruktor
     public Negara(String nama, String jenis, String namaPemimpin, int tanggal, int bulan, int tahun){
         this.nama = nama;
         this.jenis = jenis;
@@ -17,7 +17,7 @@ public class Negara{
         this.tahun = tahun;
     }
 
-//    Encapsulation
+    //encapsulation
     public int getBulan(){
         return bulan;
     }
