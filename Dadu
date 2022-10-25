@@ -5,15 +5,15 @@ public class Dadu {
     private int inputUser;
     int total;
     
-    // Encapsulation
+    // encapsulation
     void setInput( int input ) {
         this.inputUser = input;
     }
     
-    // Instansiasi Obj LinkedList
+    // instansiasi obejk linkedlist
     LinkedList<Integer> ObjDadu = new LinkedList<Integer>();
     
-    // Membuat method acakNilai() (b)
+    // method untuk mengacak nilai dadu
     void acakNilai() {
         for( int i = 1; i <= this.inputUser; i++ ) {
             int nilaiAcak = 1 + (int)(Math.random() * 6);
@@ -26,10 +26,10 @@ public class Dadu {
     
     void cetakDadu() {
         for( int i = 1; i <= this.inputUser; i++ ) {
-            // Cetak Output tiap objek dadu (f)
+            // output per dadu
             System.out.println("Dadu ke-" + i + " bernilai " + ObjDadu.get(i-1));
         }
-        // Cetak Output total jumlah objek dadu (g)
+        // output jumlah nilai dadu
         System.out.println("Total nilai dadu keseluruhan " + this.total);
     }
 }
